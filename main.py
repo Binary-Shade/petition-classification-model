@@ -7,7 +7,7 @@ app = FastAPI()
 
 # Load Classifier
 try:
-    classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+    classifier = pipeline("zero-shot-classification", model="distilbert-base-uncased-mnli")
     print("Model loaded successfully.")
 except Exception as e:
     print(f"Error loading model: {e}")
